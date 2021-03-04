@@ -83,15 +83,15 @@ function unfoldGrid($startPoint){
 function unfoldNav($totalPages, $page)
 {
     if ($page > 1) {
-        echo '<a class="page-link navButton" href="category.php?page=' . ($page - 1) . '" >Previous</a>';
+        echo '<a class="page-link navButton" href="index.php?page=' . ($page - 1) . '" >Previous</a>';
     }
 
     for ($i = 1; $i <= $totalPages; $i++) {
-        echo '<a class="page-link navButton" href="category.php?page=' . $i . '" >' . $i . '</a>';
+        echo '<a class="page-link navButton" href="index.php?page=' . $i . '" >' . $i . '</a>';
     }
 
     if ($page < $totalPages) {
-        echo '<a class="page-link navButton" href="category.php?page=' . ((int)$page + 1) . '" >Next</a>';
+        echo '<a class="page-link navButton" href="index.php?page=' . ((int)$page + 1) . '" >Next</a>';
     }
 }
 
